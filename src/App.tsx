@@ -4,8 +4,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import BookList from "./Components/BookList";
 import Button from "./Components/Button";
-const SearchPageComponent = lazy(() => import("./Components/SearchPage"));
-
+import SearchPage from "./Components/SearchPage";
 
 const App: React.FC = () => {
 
@@ -17,13 +16,13 @@ const App: React.FC = () => {
           element={
           <div className="list-books-content">
             <Header/>
-             <BookList />
+            <BookList />
              <Button/>
             </div>
           }
         ></Route>
        
-        <Route path="/search" element={<SearchPageComponent/>}></Route>
+        <Route path="/search" element={<SearchPage/>}></Route>
       </Routes>
     </BrowserRouter>
   );
