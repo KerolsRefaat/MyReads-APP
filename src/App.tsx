@@ -1,10 +1,8 @@
 import React from "react";
-import { Routes, Link, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { useDispatch } from "react-redux";
 import SearchPage from "./Components/SearchPage";
 import Header from "./Components/Header";
-import { booksSliceActions } from "./store/slices/booksSlice";
 import BookList from "./Components/BookList";
 import Button from "./Components/Button";
 
